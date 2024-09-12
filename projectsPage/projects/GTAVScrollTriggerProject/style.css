@@ -1,0 +1,256 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    color: rgb(255, 255, 255);
+  }
+  @import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+  @font-face {
+    font-family: 'GTA';
+    src: url(Fonts/pricedow.ttf);
+  }
+
+
+ html,body {
+    height: 100%;
+    width: 100%;
+}
+
+#bgdiv{
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+}
+#overlay{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  opacity: 100%;
+  background: linear-gradient(-180deg,rgba(0, 0, 0, 0.584),rgba(0, 0, 0, 0.162));
+}
+#bgdiv>video{
+  
+  width: 100%; 
+  
+}
+
+#scrolldown{
+    position: fixed;
+    height: 3%;
+    width: 9%;
+    bottom: 1%;
+    right: 50%;
+    transform: translateX(50%);
+    animation: scrolldownanimation infinite 0.6s alternate-reverse;
+}
+
+@keyframes scrolldownanimation {
+    0%{
+        bottom: 1%;
+        right: 50%; 
+        transform: translateX(50%);
+    }
+    100%{
+        bottom: 2%;
+        right: 50%; 
+        transform: translateX(50%);
+    }
+}
+
+body{
+    /* background-image: url("https://i.redd.it/qcs621f5306c1.jpg");
+    background-position: center;
+    background-size: cover; */
+    background-color: transparent;
+    overflow-x: hidden;
+    box-sizing: border-box;
+   
+  }
+
+  body::-webkit-scrollbar{
+    display: none;
+  }
+  #page1{
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  #nav{
+    height: 15vh;
+    width: 100%;
+    font-family: 'Gilroy-Bold', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #navpart1{
+    height: 100%;
+    width: 100%;
+    padding: 0vw 0vw;
+    display: flex;
+    align-items: center;
+   
+  }
+  #navpart1 h4{
+    font-size: 2vw;
+    font-weight: 800;
+  }
+  #navpart1 > img{
+    height: 50%; 
+    padding: 0vw  1vw; 
+    margin-left: 4vw;
+    
+  }
+
+  #navpart2{
+    height: 100%;
+    width: 100%;  
+    padding: 0vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #navpart2 h3{
+    font-size: 1.5vw;
+  
+  }
+#page1content
+{
+  height: 100%;
+  width: 100%;
+  font-family: "GTA";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#page1content #h201{
+  text-transform: uppercase;
+  font-size: 5vw;
+  letter-spacing: 0.5vh;
+  font-weight: 10;
+  margin-left:-40vw;
+}
+#page1content #h202{
+  text-transform: uppercase;
+  font-size: 5vw;
+  letter-spacing: 0.5vh;
+  font-weight: 10;
+  margin-left:40vw;
+}
+
+#page1content img{
+  height: 45%;
+  width: 20%;
+
+  object-fit: contain;
+}
+  
+
+#page3{
+    height: 100%;
+    width: 100%;
+   
+  }
+
+
+  #page3 h1{
+    letter-spacing: 4vh;
+    font-family: "GTA";
+    font-size: 42vw;
+    font-weight: 600;
+    color:#42B9DB;
+    text-wrap: nowrap;
+    
+    padding: 0vw 3vw;
+    -webkit-text-stroke: 12px white;
+ 
+  }
+
+  #page3img{
+    height: 100%;
+    width: 100%;
+
+  }
+
+  #page3img img{
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      width: 0%;
+      object-fit: cover;
+      object-position: top;
+      
+  }
+
+  #page4{
+    height: 100%;
+    width: 100%;
+ 
+
+  }
+
+  #page4 h1{
+    padding: 0vw 3vw;
+    -webkit-text-stroke: 12px white;
+    letter-spacing: 4vh;
+    font-family: "GTA";
+    font-size: 42vw;
+    font-weight: 600;
+    color:#FFA248;
+    text-wrap: nowrap;
+    
+}
+#page4img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+#page4img img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 0%;
+    object-fit: cover;
+    object-position: top;
+    
+}
+
+
+#page5 h1{
+    letter-spacing: 4vh;
+    font-family: "GTA";
+    font-size: 42vw;
+    font-weight: 600;
+    color:#98EFA9;
+    text-wrap: nowrap;
+    padding: 0vw 3vw;
+    -webkit-text-stroke: 12px white;
+    
+  }
+  #page5img{
+    height: 100%;
+    width: 100%;
+
+  }
+
+  #page5img img{
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 100%;
+      width: 0%;
+      object-fit: cover;
+      object-position: top;
+      
+  }
+
+  
